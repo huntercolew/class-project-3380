@@ -1,0 +1,7 @@
+{
+  "name": "roadtrip-playlist",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
