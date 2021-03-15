@@ -1,22 +1,36 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonButton, IonItem, IonInput, IonCard, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
+
+
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+        <IonToolbar color="primary">
+          <IonTitle>Destination</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
+            <IonTitle size="large">Destination</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+	
+
+	<IonCard color="medium">
+          <IonCardHeader>
+          
+            
+            <IonCardTitle>Connect to your Spotify account to save your personall playlist.
+	    </IonCardTitle>
+	</IonCardHeader>
+       </IonCard>
+<IonButton expand="full" size="large" color="success" href="https://accounts.spotify.com/en/login?continue=https"> Connect to Spotify</IonButton>
+
+           
       </IonContent>
     </IonPage>
   );
